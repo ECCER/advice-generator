@@ -30,8 +30,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [](https://github.com/ECCER/advice-generator)
-- Live Site URL: [](https://vercel.com/eccer/advice-generator)
+- Solution URL: [github](https://github.com/ECCER/advice-generator)
+- Live Site URL: [vercel](https://vercel.com/eccer/advice-generator)
 
 ## My process
 
