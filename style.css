@@ -1,0 +1,92 @@
+:root {
+  --light-cyan: hsl(193, 38%, 86%);
+  --neon-green: hsl(150, 100%, 66%);
+  --grayish-blue: hsl(217, 19%, 38%);
+  --dark-grayish-blue: hsl(217, 19%, 24%);
+  --dark-blue: hsl(218, 23%, 16%);
+}
+
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Manrope', sans-serif;
+  background-color: var(--dark-blue);
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+main {
+  background-color: var(--dark-grayish-blue);
+  max-width: 40rem;
+  min-width: 150px;
+  width: 90%;
+  margin: auto;
+  padding: 0 .7rem;
+  border-radius: .5rem;
+  text-align: center;
+  /* position: relative; */
+}
+
+#number {
+  color: var(--neon-green);
+  font-size: 15px;
+  /* font-family: Arial, Helvetica, sans-serif; */
+  margin: 2rem 0 0;
+  letter-spacing: 3pt;
+}
+
+#quote {
+  color: var(--light-cyan);
+  font-size: 28px;
+  margin: 1.5rem 0;
+  /* padding: 0 .5rem; */
+}
+
+.divider2 {
+  display: none;
+}
+
+@media (min-width: 600px) {
+  .divider {
+    display: none;
+  }
+  .divider2 {
+    display: unset;
+    width: 90%;
+  }
+}
+
+@media (max-width: 355px) {
+  .divider {
+    width: 100%;
+  }
+}
+
+.dice {
+  background-color: var(--neon-green);
+  border-radius: 50%;
+  position: relative;
+  bottom: -2rem;
+  width: 4rem;
+  height: 4rem;
+  /* right: 45%; */
+  margin: auto;
+  display: flex;
+  cursor: pointer;
+}
+
+
+.dice img {
+  display: block;
+  margin: auto;
+}
+
+.dice:hover {
+  box-shadow: 0rem 0rem 2rem 0rem rgba(82, 255, 168, 0.7);
+}
